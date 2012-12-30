@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,
+				maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="mh5.css">
+		<link rel="stylesheet" href="colors.css">
+	</head>
+	<body>
+
+        <div id="search" style="width: 320px; position: relative;"></div>
+		<div id="mapContainer" style="height: 480px; width: 320px;"></div>
+		
+		<script src="js/mh5.js"></script>
+		<script>
+			//nokia.mh5.assetsPath = "http://api.maps.nokia.com/mobile/1.0.0/lib/";
+			nokia.mh5.appId = "CqPZR4Tm7i2_S2VDDONy";
+			nokia.mh5.appCode= "PL4G39vOuXuV3MyWWlPn0Q";
+		
+			var map = new nokia.mh5.components.Map({
+				center: {
+					longitude: 13.3896145,
+					latitude: 52.5166648
+				},
+				zoom: 12,
+				schema: "normal.day.traffic",
+				tracking: true,
+				
+			});
+			map.createPoi(nokia.mh5.assetsPath +
+				"img/categories/01.icon.mh5.basic.png", {
+					longitude: 13.3896145,
+					latitude: 52.5166648,
+					name: "Nokia Office"
+			});
+		
+		document.getElementById("mapContainer").appendChild(map.root);
+		
+
+
+		</script>
+
+	</body>
+</html>

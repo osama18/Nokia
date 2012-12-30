@@ -1,0 +1,59 @@
+/**
+ * @theme
+ *
+ */
+
+.mh5_baseColor {
+    color: #B61F24;
+}
+.mh5_baseBackgroundColor { /* Header bar color */
+    background-color: #999;
+}
+.mh5_primaryColorBright,
+.mh5_primaryColorBright a,
+.mh5_primaryColorBright input[type='search'],
+.mh5_primaryColorBrightPH input::-webkit-input-placeholder,
+h1 {
+    color: #991B1F;
+}
+.mh5_primaryBackgroundColorBright {
+    background-color: #B61F24;
+}
+.mh5_primaryBorderColorBright {
+    border-color: #B61F24;
+}
+.mh5_primaryColorDark,
+.mh5_primaryColorDark a {
+    color: #B61F24;
+}
+.mh5_primaryBackgroundColorDark,
+.mh5_scrollbarH > div,
+.mh5_scrollbarV > div {
+    background-color: #861F24;
+}
+.mh5_secondaryColorBright,
+.mh5_secondaryColorBright a {
+    color: #861F24;
+}
+.mh5_secondaryBackgroundColorBright {
+    background-color: #861F24;
+}
+// currently not in use
+.mh5_secondaryColorDark
+.mh5_secondaryColorDark a {
+    color: #F2CCCC;
+}
+// currently not in use
+.mh5_secondaryBackgroundColorDark {
+    background-color: #F2CCCC;
+}
+.mh5_standardColorDark {
+    color: #002838;
+}
+.mh5_standardBackgroundColorDark {
+    background-color: #002838;
+}
+
+.mh5_modalBg {
+    background-color: rgba(0, 15, 26, .85) !important;
+}

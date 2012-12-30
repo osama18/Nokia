@@ -1,0 +1,84 @@
+.mh5_Page {
+    top: 50px;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    margin: 0px;
+}
+
+.mh5_app.mh5_tabletLayout ~ .mh5_SettingsDialog {
+    top: 10rem;
+}
+
+.lastfm_header {
+    height: 50px;
+    background: url(./img/logo.png) no-repeat 11px 13px;
+    background-color: #B61F24;
+    border-bottom: #FFF solid 1px;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+}
+
+
+.lastfm_header label {
+    position: absolute;
+    color: white;
+    line-height: 12px;
+    margin: 27px 0 0 105px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.lastfm_detailsContent {
+    height: 60px;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    box-align: center;
+}
+
+.lastfm_detailsContent > div {
+    -webkit-box-flex: 1;
+    -ms-flex:         1 0 auto;
+    box-flex:         1;
+    color: #FFF;
+}
+
+.lastfm_detailsContent > div {
+    margin: 0 10px;
+}
+
+.lastfm_detailsContent > img {
+    margin-right: 10px;
+    border: 2px solid #FFF;
+    max-width: 64px;
+    max-height: 56px;
+    overflow: hidden;
+}
+
+.lastfm_detailsContent > div > div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.lastfm_detailsContent > div > div > span{
+    font-weight: bold;
+}
+
+.lastfm_detailsContent > div > div:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.lastfm_detailsContent > div > div:not(:first-child) {
+    font-size: 14px;
+}
+
