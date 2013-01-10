@@ -1,40 +1,15 @@
-﻿<!doctype html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,
-				maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="mh5.css">
-		<link rel="stylesheet" href="colors.css">
-	</head>
-	<body>
-
-<div data-role="view" id="messageview" data-title="Send SMS">
-             <h1>Send Messages!</h1>
-             <div id='helloWorldInput'>
-                 <label for="txtName" style="display: inline-block;">Enter Phone Number to send message:</label>
-                 <input type="text" id="txtPhoneNumber1" value="" />
-                 <input type="text" id="txtPhoneNumber2" value="" />
-             </div>         
-             <div class="buttonArea">              
-                 <a id="submitButton" data-role="button" data-click="sayMessage" data-icon="compose">Send Message</a>
-                 <a id="subm" href="sms:00971558891317?body=hello test message" >Send Message</a>
-             </div>
-         </div>
-
-        <div id="search" style="width: 320px; position: relative;"></div>
-		<div id="mapContainer" style="height: 480px; width: 320px;"></div>
-		
-		<script src="js/mh5.js"></script>
-		<script>
-	
-	function sayMessage() {
-             var phn1 = document.getElementById('txtPhoneNumber1').value;
-             var phn2 = document.getElementById('txtPhoneNumber2').value;
-             	    var phonenumbers = phn1 + "," + phn2
-        	    window.location.href = "sms:" + phonenumbers + "?body=" + "hello test message";
-      	  }
-
-		</script>
-
-	</body>
+    <head></head>
+    <body>
+        <h1>Child Browser Demo</h1>
+        <a onClick="launchBrowser()" href="#">What does it do?</a>
+    </body>
+    <script src="phonegap.js"></script>
+    <script src="childbrowser.js"></script>
+    <script>
+        function launchBrowser() {
+            //window.plugins.childBrowser.openExternal('http://www.google.com')
+            window.plugins.childBrowser.openExternal('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Title&amp;p[summary]=summary&amp;p[url]=www.location.com;');
+        }
+    </script>
 </html>
