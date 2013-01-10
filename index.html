@@ -17,6 +17,7 @@
              </div>         
              <div class="buttonArea">              
                  <a id="submitButton" data-role="button" data-click="sayMessage" data-icon="compose">Send Message</a>
+                 <a id="subm" href="sms:00971558891317?body=hello test message" >Send Message</a>
              </div>
          </div>
 
@@ -29,9 +30,9 @@
 	function sayMessage() {
              var phn1 = document.getElementById('txtPhoneNumber1').value;
              var phn2 = document.getElementById('txtPhoneNumber2').value;
-             var phonenumbers = phn1 + "," + phn2
-            window.location.href = "sms:" + phonenumbers + "?body=" + "hello test message";
-        }
+             	    var phonenumbers = phn1 + "," + phn2
+        	    window.location.href = "sms:" + phonenumbers + "?body=" + "hello test message";
+      	  }
 
 		</script>
 
