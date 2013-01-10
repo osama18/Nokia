@@ -8,6 +8,18 @@
 	</head>
 	<body>
 
+<div data-role="view" id="messageview" data-title="Send SMS">
+             <h1>Send Messages!</h1>
+             <div id='helloWorldInput'>
+                 <label for="txtName" style="display: inline-block;">Enter Phone Number to send message:</label>
+                 <input type="text" id="txtPhoneNumber1" value="" />
+                 <input type="text" id="txtPhoneNumber2" value="" />
+             </div>         
+             <div class="buttonArea">              
+                 <a id="submitButton" data-role="button" data-click="sayMessage" data-icon="compose">Send Message</a>
+             </div>
+         </div>
+
         <div id="search" style="width: 320px; position: relative;"></div>
 		<div id="mapContainer" style="height: 480px; width: 320px;"></div>
 		
