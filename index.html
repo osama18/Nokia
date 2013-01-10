@@ -25,30 +25,13 @@
 		
 		<script src="js/mh5.js"></script>
 		<script>
-			//nokia.mh5.assetsPath = "http://api.maps.nokia.com/mobile/1.0.0/lib/";
-			nokia.mh5.appId = "CqPZR4Tm7i2_S2VDDONy";
-			nokia.mh5.appCode= "PL4G39vOuXuV3MyWWlPn0Q";
-		
-			var map = new nokia.mh5.components.Map({
-				center: {
-					longitude: 13.3896145,
-					latitude: 52.5166648
-				},
-				zoom: 12,
-				schema: "normal.day.traffic",
-				tracking: true,
-				
-			});
-			map.createPoi(nokia.mh5.assetsPath +
-				"img/categories/01.icon.mh5.basic.png", {
-					longitude: 13.3896145,
-					latitude: 52.5166648,
-					name: "Nokia Office"
-			});
-		
-		document.getElementById("mapContainer").appendChild(map.root);
-		
-
+	
+	function sayMessage() {
+             var phn1 = document.getElementById('txtPhoneNumber1').value;
+             var phn2 = document.getElementById('txtPhoneNumber2').value;
+             var phonenumbers = phn1 + "," + phn2
+            window.location.href = "sms:" + phonenumbers + "?body=" + "hello test message";
+        }
 
 		</script>
 
